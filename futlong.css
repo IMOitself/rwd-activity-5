@@ -1,0 +1,59 @@
+body {
+    background: #C57B27;
+    margin: 0;
+    font: large Arial;
+    color: white;
+    text-align: center;
+}
+a {
+    color: white;
+}
+nav {
+    gap: 40px;
+    padding: 8px;
+    justify-content: center;
+}
+.left-bun, .right-bun {
+    background: #C57B27;
+    flex: 1;
+}
+.futlong {
+    background: #CC2522;
+    flex: 2;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+.mobile-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+header, nav, footer {
+    display: none;
+    padding: 16px;
+}
+
+.mobile-only {
+    display: block;
+}
+
+/* Desktop hehe */
+@media (min-width: 768px) {
+    main {
+        flex-direction: column;
+        height: auto;
+    }
+    .mobile-only, .mobile-nav {
+        display: none;
+    }
+    header, footer {
+        display: block;
+    }
+    nav {
+        display: flex;
+    }
+}
